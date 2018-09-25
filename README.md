@@ -16,12 +16,12 @@ the required fields to implement this. In test_chatbot.js
 you will have to replace the constant variables 
 "BOT_USERNAME", "BOT_PASSWORD", and "CHANNEL".
 
--BOT_USERNAME: You should probably create a new Twitch account
+- BOT_USERNAME: You should probably create a new Twitch account
 for your bot to run as. Then insert your bot's username for
 this constant variable.
--BOT_PASSWORD: You will need to generate an api key for your
+- BOT_PASSWORD: You will need to generate an api key for your
 bot account and input that key into this constant variable.
--CHANNEL: This is the channel name you would want your bot
+- CHANNEL: This is the channel name you would want your bot
 to "listen" in on.
 
 ## Thought(s)
