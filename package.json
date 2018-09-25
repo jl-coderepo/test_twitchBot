@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tmi.js": "^1.2.1"
+    "twitch-js": "^1.2.14"
   }
 }

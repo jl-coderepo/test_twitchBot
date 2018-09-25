@@ -6,7 +6,7 @@ const BOT_USERNAME = "insert_bot_username";
 const BOT_PASSWORD = "insert_bot_api_key";
 const CHANNEL = "insert_channel_name";
 
-var tmi = require('tmi.js');
+const TWITCHJS = require('twitch-js');
 
 var options = {
   options: {
@@ -23,7 +23,7 @@ var options = {
   channels: [CHANNEL]
 }
 
-var client = new tmi.client(options);
+var client = new TWITCHJS.client(options);
 client.connect();
 
 client.on('chat', function(channel, user, message, self) {
