@@ -32,3 +32,8 @@ where it's beyond "personal use", but I would like to implement
 other apis (such as Spotify or Google Drive) to be useful. An
 extreme stretch goal would be to use TensorFlow to make it more
 useful.
+
+## Note(s)
+
+Didn't realize this, but tmi.js hasn't been actively worked on since
+like a year ago. Probably best to use a different package than tmi.js
