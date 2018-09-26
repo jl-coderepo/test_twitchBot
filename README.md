@@ -35,5 +35,7 @@ useful.
 
 ## Note(s)
 
-Didn't realize this, but tmi.js hasn't been actively worked on since
-like a year ago. Probably best to use a different package than tmi.js
+Switched from tmi.js to twitch-js. Added in a function to sleep
+because in the future want to implement some type of scraper.
+Right now the implementation looks wrong and should be
+refactored in the future.

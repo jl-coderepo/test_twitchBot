@@ -23,12 +23,27 @@ var options = {
   channels: [CHANNEL]
 }
 
+var botSleep = false;
+
+const sleep = (milliseconds) => {
+  return new Promise(resolve => setTimeout(resolve, milliseconds))
+}
+
 var client = new TWITCHJS.client(options);
 client.connect();
 
 client.on('chat', function(channel, user, message, self) {
-  if(message === "!hello") {
+  if (self) return;
+  else if(message === "!hello") {
     client.action(CHANNEL, user['display-name'] + " hello.");
+  }
+  else if(message === "!poke" && !botSleep) {
+      client.action(CHANNEL, user['display-name'] + " ok I'm up.")
+      botSleep = true;
+  }
+  else if(message === "!poke" && botSleep) {
+    client.action(CHANNEL, user['display-name'] + " I'm still sleeping!")
+    sleep(10000).then(()=>{botSleep=false;});
   }
 });
 
